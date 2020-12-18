@@ -12,7 +12,6 @@ Following are the topics that are covered as a part of the codes. Click on the l
 <li><a href="https://www.scribd.com/presentation/466696801/DSA-DAY-7-SEARCH-HASH-STORE">Search, Hash and Store</a></li>
 </ol>
 <br>
-<br>
 <h2>Reference Guides</h2><br>
 Data Structures through C in Depth - S.K. Srivastava<br>
 Fundamentals of Algorithms - Horowitz, Sahni
@@ -20,11 +19,10 @@ Fundamentals of Algorithms - Horowitz, Sahni
 <h2>Notes on all of DSA:</h2><br>
 https://www.programiz.com/dsa 
 <br>
-<br>
 <h2>Tutorials on Youtube:</h2><br>
-https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU<br>
-<br><br>
-<h2>Interview Questions for DSA:</hr>
+https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU
+<br>
+<h2>Interview Questions for DSA:</h2>
 <ol>
   <li>https://www.tutorialspoint.com/data_structures_algorithms/data_structures_algorithms_interview_questions.htm</li>
   <li>http://letsfindcourse.com/technical-questions/dsa-mcq/dsa-interview-questions</li>

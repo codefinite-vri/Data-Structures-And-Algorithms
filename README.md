@@ -11,7 +11,7 @@ Following are the topics that are covered as a part of the codes. Click on the l
 <li><a href="https://www.scribd.com/presentation/466672908/DSA-DAY-6-Graphs">Graphs</a></li>
 <li><a href="https://www.scribd.com/presentation/466696801/DSA-DAY-7-SEARCH-HASH-STORE">Search, Hash and Store</a></li>
 </ol>
-<h2>Reference Guides</h2>
+<h2>Guides for Reference</h2>
 Data Structures through C in Depth - S.K. Srivastava<br>
 Fundamentals of Algorithms - Horowitz, Sahni
 <br>

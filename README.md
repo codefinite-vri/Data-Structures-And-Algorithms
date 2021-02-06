@@ -10,6 +10,7 @@ Following are the topics that are covered as a part of the codes. Click on the l
 <li><a href="https://www.scribd.com/presentation/466521723/DSA-DAY-5-Trees">Trees</a></li>
 <li><a href="https://www.scribd.com/presentation/466672908/DSA-DAY-6-Graphs">Graphs</a></li>
 <li><a href="https://www.scribd.com/presentation/466696801/DSA-DAY-7-SEARCH-HASH-STORE">Search, Hash and Store</a></li>
+<li><a href="https://www.scribd.com/document/478541759/Solving-Dsa-Interview-Questions">Interview Questions</a></li>
 </ol>
 <h2>Guides for Reference</h2>
 Data Structures through C in Depth - S.K. Srivastava<br>
@@ -29,4 +30,8 @@ https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU
 <li>http://placement.freshersworld.com/data-structure-interview-questions/33121964</li> 
 <li>https://www.faceprep.in/data-structures/data-structures-interview-questions/</li>
 <li>https://www.freecodecamp.org/news/the-top-data-structures-you-should-know-for-your-next-coding-interview-36af0831f5e3/</li>
+<li>https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0</li>
+<li>https://medium.com/afteracademy/100-data-structures-and-algorithms-problems-asked-during-coding-interviews-269391b8ff8</li>
+<li>https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/</li>
+<li>https://hackernoon.com/50-data-structure-and-algorithms-interview-questions-for-programmers-b4b1ac61f5b0</li>
 </ol>

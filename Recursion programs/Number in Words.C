@@ -3,7 +3,7 @@
 #include<stdio.h>
 void f(int n); 
 
-const char* nums[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+const char* words[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
 int main() 
 { 
@@ -18,5 +18,5 @@ void f(int n)
 
 	f(n/10);
 
-	printf("%s ", nums[n%10]);
+	printf("%s ", words[n%10]);
 } 

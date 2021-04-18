@@ -1,16 +1,31 @@
 /* Enter a line of text and Reverse it*/
 #include<stdio.h>
+#include<stdlib.h>
+
 void func(void);
-main( )
+
+int main( )
 {
 	printf("Enter text :\n");
 	func();
 	printf("\n");
 }/*End of main()*/
+
 void func(void)
 {
-	char c;
-	if((c=getchar())!='\n')
+	int c;
+
+	c = getchar();
+	switch (c)
+	{
+	case EOF:
+	case '\n':
+		break;
+	default:
 		func();
-	putchar(c);
+		break;
+	}
+
+	if (c != EOF)
+		putchar(c);
 }

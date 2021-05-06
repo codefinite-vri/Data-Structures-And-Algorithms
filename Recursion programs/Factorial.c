@@ -1,23 +1,23 @@
-/*Program to find the factorial of a number by recursive method*/
+/*Program to find the factorial of a number by recursive and iterative methods*/
 
 #include<stdio.h>
+#include<stdlib.h>
 long int fact(int n);
 long int Ifact(int n);
 
-main( )
+int main( )
 {
 	int num;
 	printf("Enter a number : ");
 	scanf("%d", &num);
-	if(num<0)
+	if(num<0) {
 		printf("No factorial for negative number\n");
-	else
-		printf("Factorial of %d is %ld\n", num, fact(num) );
+		exit(1);
+	}
 
-	if(num<0)
-		printf("No factorial for negative number\n");
-	else
-		printf("Factorial of %d is %ld\n", num, Ifact(num) );
+	printf("Factorial of %d is %ld\n", num, fact(num) );
+
+	printf("Factorial of %d is %ld\n", num, Ifact(num) );
 }/*End of main()*/
 
 /*Recursive*/
@@ -39,4 +39,3 @@ long int Ifact(int n)
 	}
 	return fact;
 }/*End of ifact()*/
-

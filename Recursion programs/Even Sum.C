@@ -1,10 +1,10 @@
 /* Sum of all even numbers in an array */
 #include<stdio.h>
 int sumEven(int arr[], int size);
-main( )
+int main( )
 {
 	int arr[6]={1,2,3,4,8,10};
-	printf("%d\n",sumEven(arr,6));
+	printf("%d\n",sumEven(arr,sizeof(arr)/sizeof(int)));
 }
 int sumEven(int arr[], int size)
 {

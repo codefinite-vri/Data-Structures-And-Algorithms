@@ -1,14 +1,21 @@
 /*Program of sorting using bubble sort*/
 
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX 100
 
-main()
+int main()
 {
 	int arr[MAX],i,j,temp,n,xchanges;
 
 	printf("Enter the number of elements : ");
 	scanf("%d",&n);
+
+	if(n > MAX)
+	{
+		printf("number of elements must not exceed %d\n", MAX);
+		exit(1);
+	}
 
 	for(i=0; i<n; i++)
 	{
@@ -39,4 +46,3 @@ main()
 		printf("%d ",arr[i]);
 	printf("\n");
 }/*End of main()*/
-

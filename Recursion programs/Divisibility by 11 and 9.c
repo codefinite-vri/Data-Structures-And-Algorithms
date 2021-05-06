@@ -1,21 +1,22 @@
 /*Program that tests whether a number is divisible by 11 and 9 or not */
 
 #include<stdio.h>
+#include<stdlib.h>
 int divisibleBy9(long int x);
 int divisibleBy11(long int x);
 
-main( )
+int main( )
 {
 	long int num;
 	printf("Enter the number to be tested : ");
 	scanf("%ld", &num);
 	
-	if(divisibleBy9(num))
+	if((num == 0) || divisibleBy9(labs(num)))
 		printf("The number is divisible by 9\n");
 	else
 		printf("The number is not divisible by 9\n");
 	
-	if(divisibleBy11(num))
+	if(divisibleBy11(labs(num)))
 		printf("The number is divisible by 11\n");
 	else
 		printf("The number is not divisible by 11\n");
@@ -34,12 +35,12 @@ int divisibleBy9( long int n )
 		sumofDigits += n%10;	
 		n/=10;
 	}
-	divisibleBy9(sumofDigits);
+	return divisibleBy9(sumofDigits);
 }/*End of divisibleBy9()*/
 
 int divisibleBy11( long int n )
 {
-	int s1=0, s2=0,diff;
+	int s1=0, s2=0;
 	
 	if(n == 0)
 		return 1;
@@ -53,7 +54,7 @@ int divisibleBy11( long int n )
 		s2 += n%10;
 		n /= 10;
 	}
-	diff = s1>s2 ? (s1-s2) : (s2-s1); 
-	divisibleBy11(diff);
+	return divisibleBy11(labs(s1-s2));
 }/*End of divisibleBy11()*/
+
 

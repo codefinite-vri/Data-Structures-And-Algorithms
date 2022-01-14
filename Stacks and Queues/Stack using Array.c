@@ -44,7 +44,7 @@ main()
 			display();
 			break;
 		 case 5:
-			exit(1);
+			exit(0);
 		 default:
 			printf("Wrong choice\n");
 		}/*End of switch*/

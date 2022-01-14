@@ -1,7 +1,10 @@
-/* Find whether a binary tree is binary search tree or not*/
+/* Find out whether a binary tree is a binary search tree or not*/
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include<limits.h>
+#include<unistd.h>
+#define SLEN 5
 
 struct node
 {
@@ -15,31 +18,44 @@ void inorder(struct node *ptr);
 struct node *Node(int item);
 int IsBST(struct node *ptr, int MIN, int MAX);
 
-main( )
+int main( )
 {
-	struct node *root1, *root2;
-	
+	struct node *root1, *root2, *root3;
+	char str[SLEN];
+
+	srandom(getpid());
+
+	/* BST */
 	root1 = Node(32);
 	root1->lchild = Node(23);
 	root1->rchild = Node(36);
 	root1->lchild->rchild = Node(25);
 	root1->rchild->lchild = Node(33);
 
+	/* not a BST */
 	root2 = Node(42);
 	root2->lchild = Node(60);
 	root2->rchild = Node(19);
 	root2->lchild->rchild = Node(36);
 	root2->rchild->lchild = Node(41);
 
+	/* random test data */
+	root3 = Node(random() % INT_MAX);
+	root3->lchild = Node(random() % INT_MAX);
+	root3->rchild = Node(random() % INT_MAX);
+	root3->lchild->rchild = Node(random() % INT_MAX);
+	root3->rchild->lchild = Node(random() % INT_MAX);
+
 	display(root1,1);
 	printf("\n\n");
 	inorder(root1);
 	printf("\n\n");
 
-	if( IsBST(root1,INT_MIN,INT_MAX) )  
-		printf("Tree 1 is a BST\n");
+	if( IsBST(root1,INT_MIN,INT_MAX) )
+		str[0] = '\0';  
 	else
-		printf("Tree 1 is not a BST\n");
+		strncpy(str, "not ", SLEN);
+	printf("Tree 1 is %sa BST\n", str);
 
 	display(root2,1);
 	printf("\n\n");
@@ -47,9 +63,21 @@ main( )
 	printf("\n\n");
 
 	if( IsBST(root2,INT_MIN,INT_MAX) )  
-		printf("Tree 2 is a BST\n");
+		str[0] = '\0';  
 	else
-		printf("Tree 2 is not a BST\n");
+		strncpy(str, "not ", SLEN);
+	printf("Tree 2 is %sa BST\n", str);
+
+	display(root3,1);
+	printf("\n\n");
+	inorder(root3);
+	printf("\n\n");
+
+	if( IsBST(root3,INT_MIN,INT_MAX) )  
+		str[0] = '\0';  
+	else
+		strncpy(str, "not ", SLEN);
+	printf("Tree 3 is %sa BST\n", str);
 }/*End of main( )*/
 
 int IsBST(struct node *ptr, int MIN, int MAX)  
@@ -64,6 +92,10 @@ int IsBST(struct node *ptr, int MIN, int MAX)
 struct node *Node(int item)
 {  
 	struct node* tmp = (struct node *)malloc(sizeof(struct node));  
+	if (tmp == NULL) {
+		perror("malloc");
+		exit(1);
+	}
 	tmp->info = item;  
 	tmp->lchild = tmp->rchild = NULL;  
 	return tmp;  
